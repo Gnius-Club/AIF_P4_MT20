@@ -4,19 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Playbook-P4-TM20</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <header>
-        <h1><span class="book-icon">📋</span> <strong>Playbook Sesión 20 4to Primaria</strong></h1>
+        <h1><span class="book-icon">📋</span> <strong>Playbook: Misión 20 - 4to de Primaria</strong></h1>
         <div class="header-widgets">
             <div class="timer-container">
-                <span id="timer">⏱️ 00:00</span>
-                <button id="startStop">Start</button>
-                <button id="reset">Reset</button>
+                <span id="global-timer">⏱️ 40:00</span>
+                <button id="global-start-stop">Start</button>
+                <button id="global-reset">Reset</button>
             </div>
             <div class="theme-toggle">
                 <i class="fas fa-sun"></i>
@@ -28,7 +27,6 @@
             </div>
         </div>
     </header>
-
     <div class="main-container">
         <aside class="activity-list">
             <h2>Actividades</h2>
@@ -40,352 +38,406 @@
                 <li><a href="#activity-4">4</a></li>
                 <li><a href="#activity-5">5</a></li>
             </ul>
-
-            <div class="sidebar-info">
-                <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
-                <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
-            </div>
         </aside>
-
         <main class="content">
             <div class="progress-bar">
                 <div class="progress"></div>
             </div>
-
-            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
-
+            <!-- ACTIVIDAD 0: DE UN VISTAZO -->
             <div class="activity-card" id="activity-0">
-                <h2><span class="book-icon">📝</span> De un Vistazo: Sesión Gnius</h2>
-                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
-                <div class="overview-table-container">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
-                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <strong>Objetivos de Aprendizaje:</strong>
-                                    <ul>
-                                        <li>Cutebot & A.I. Lens & GCS: Escenario "Dilema Ético Simplificado - Rescate Animal". Cutebot debe elegir "asustar" (desviarse hacia) un peluche de animal común o uno en peligro (detectados como objetos aprendidos o tarjetas específicas por la A.I. Lens).</li>
-                                        <li>IA (A.I. GYM - Discusión): ¿Cómo programaríamos esta elección? ¿Hay una respuesta "correcta"? ¿Quién decide?</li>
-                                        <li>Parte de la Currícula de IA cubierta: Alfabetización Adicional: Dilemas Éticos en IA (Introducción muy básica).</li>
-                                        <li>Objetivo General de la Sesión: Que los estudiantes exploren, a través de una simulación con el Cutebot, la complejidad de programar un sistema de IA para tomar decisiones en situaciones donde no hay una opción "perfecta", introduciendo el concepto de dilemas éticos.</li>
-                                    </ul>
-                                    <strong>Secuencia de Clase:</strong>
-                                    <ul>
-                                        <li>⚡ Actividad 1: Saludo de I.A. con todos</li>
-                                        <li>⚡ Actividad 2: I Can Statement + Ejemplificación</li>
-                                        <li>⚡ Actividad 3: AI GYM</li>
-                                        <li>⚡ Actividad 4: Brain Spark</li>
-                                        <li>⚡ Actividad 5: Gnius STORM (Think-Pair-Share)</li>
-                                    </ul>
-                                    <strong>Entregable Clave:</strong>
-                                    <ul>
-                                        <li>Programa en MakeCode que simula el escenario del dilema ético, donde el Cutebot toma una decisión de evasión programada.</li>
-                                        <li>Participación activa en la discusión sobre la dificultad de programar estas decisiones y quién debería tomarlas.</li>
-                                    </ul>
-                                </td>
-                                <td>
-                                    <strong>Materiales Específicos:</strong>
-                                    <ul>
-                                        <li>Proyector o pantalla interactiva.</li>
-                                        <li>Conexión a internet estable.</li>
-                                        <li>Chat de "Agente Gnius" (Xolo) activo.</li>
-                                        <li>Presentación de diapositivas (Diapositivas 1-14).</li>
-                                        <li>Micro:bits y baterías (1 por cada 2 estudiantes).</li>
-                                        <li>Robots Cutebot (1 por cada 2 estudiantes).</li>
-                                        <li>Smart A.I. Lens (1 por cada 2 estudiantes).</li>
-                                        <li>Peluches o tarjetas de animales (uno común, uno "raro").</li>
-                                        <li>Objeto para usar como obstáculo (ej. una caja).</li>
-                                        <li>Acceso a MakeCode (<a href="https://makecode.microbit.org/" target="_blank">https://makecode.microbit.org/</a>).</li>
-                                    </ul>
-                                    <strong>Preparación Previa para ESTA Sesión:</strong>
-                                    <ol>
-                                        <li><strong>Revisión de Misión (Interna):</strong>
-                                            <ul>
-                                                <li>Verificar conexión a internet.</li>
-                                                <li>Confirmar acceso y funcionamiento de la plataforma de programación del día (MakeCode).</li>
-                                                <li>Asegurar disponibilidad y carga de los dispositivos físicos (Micro:bits, Cutebots, A.I. Lens).</li>
-                                                <li>Tener la presentación de diapositivas lista y en orden.</li>
-                                                <li>Probar el chat "Agente Gnius" (Xolo) para asegurar su operatividad.</li>
-                                            </ul>
-                                        </li>
-                                        <li><strong>Familiarización:</strong> Revisar el flujo de la sesión, los diálogos sugeridos y los tiempos de cada actividad.</li>
-                                        <li><strong>Ejemplo Profesor:</strong> Tener listo y funcional el proyecto de ejemplo (el escenario del dilema programado) para la demostración en la Actividad 2.</li>
-                                    </ol>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <h2><span class="book-icon">📝</span> De un Vistazo: Comando Central</h2>
+                <p class="overview-subtitle">Todo lo que necesitas para preparar y ejecutar esta misión en minutos.</p>
+                
+                <div class="command-section">
+                    <h3>🎯 Objetivo de Aprendizaje</h3>
+                    <div class="objective-box">
+                        <p><strong>Los estudiantes podrán:</strong> usar el Smart A.I. Lens para reconocimiento de objetos para conceptualizar reglas de decisión y comprender dilemas éticos y la responsabilidad humana en la programación.</p>
+                    </div>
+                </div>
+                <div class="command-section xolo-prompt">
+                    <h3>🤖 Prompt de Referencia para XOLO (Solo para Maestro)</h3>
+                    <div class="prompt-box">
+                        <div class="prompt-header">
+                            <span class="prompt-label">⚠️ NOTA: XOLO ya conoce el tema de esta misión. Este prompt es SOLO de referencia en caso de emergencia técnica:</span>
+                            <button class="copy-btn" onclick="copyPrompt('main-prompt')">
+                                <i class="fas fa-copy"></i> Copiar
+                            </button>
+                        </div>
+                        <pre id="main-prompt">Vamos a entender cómo solucionar un dilema importante. Imagina que el Cutebot está en una misión de rescate y detecta dos animales: uno común y uno en peligro. El robot solo puede ayudar a uno primero. Quiero que me ayudes a pensar: ¿cómo se programa una decisión así? ¿Qué valores entran en juego? ¿hay una respuesta correcta? y lo más importante: ¿quién debe decidir esa regla, el programador o el robot?</pre>
+                    </div>
+                </div>
+                <div class="command-section">
+                    <h3>⚡ Puntos Esenciales de la Misión</h3>
+                    <div class="essentials-grid">
+                        <div class="essential-card">
+                            <div class="essential-icon">🎓</div>
+                            <h4>Concepto Clave</h4>
+                            <p>Dilemas Éticos: Son situaciones donde debemos elegir entre dos opciones difíciles, y en programación, nosotros decidimos qué reglas debe seguir el robot ante estos problemas.</p>
+                        </div>
+                        <div class="essential-card">
+                            <div class="essential-icon">🔧</div>
+                            <h4>Habilidad Técnica</h4>
+                            <p>Usar la cámara inteligente para reconocer tarjetas y tomar decisiones.</p>
+                        </div>
+                        <div class="essential-card">
+                            <div class="essential-icon">🧪</div>
+                            <h4>Experimentación</h4>
+                            <p>Probar con diferentes tarjetas de objetos para entender cómo el robot prioriza según nuestras reglas.</p>
+                        </div>
+                        <div class="essential-card">
+                            <div class="essential-icon">💬</div>
+                            <h4>Interacción con XOLO</h4>
+                            <p>XOLO ya conoce a cada estudiante y el tema de hoy. Solo abren el chat y comienzan a aprender. Tú guías el timing y motivación.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="command-section">
+                    <h3>📦 Checklist de Materiales</h3>
+                    <div class="materials-checklist">
+                        <label><input type="checkbox"> Proyector/pantalla + presentación (5 diapositivas)</label>
+                        <label><input type="checkbox"> Internet estable + Gnius Space con XOLO activo</label>
+                        <label><input type="checkbox"> Micro:Bit (1 por cada 2 estudiantes)</label>
+<label><input type="checkbox"> Cutebot (1 por cada 2 estudiantes)</label>
+<label><input type="checkbox"> Smart A.I. Lens (1 por cada 2 estudiantes)</label>
+                        <label><input type="checkbox"> Acceso a MakeCode (https://makecode.microbit.org/) con extensión AI Lens instalada</label>
+                        <label><input type="checkbox"> Tarjetas de animales y objetos para reconocimiento</label>
+                        <label><input type="checkbox"> ⚠️ Esta misión usa programación con BLOQUES en MakeCode</label>
+                        <label><input type="checkbox"> 📋 Para agregar extensión: En MakeCode → Extensiones → Buscar 'AI Lens' → Agregar</label>
+                    </div>
+                    <p class="care-reminder"><strong>🛡️ Cuidado del equipo:</strong> Manipular con cuidado, no golpear, mantener en superficie plana, verificar batería. No tocar el lente de la cámara, mantener limpio, conectar con cuidado.</p>
+                </div>
+                <div class="command-section">
+                    <h3>🗓️ Secuencia de la Misión (40 min)</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot">1</div>
+                            <div class="timeline-content">
+                                <strong>Intro a la Misión</strong>
+                                <span class="time-badge">2 min</span>
+                                <p>Bienvenida, I Can Statement y contexto de la misión.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot">2</div>
+                            <div class="timeline-content">
+                                <strong>A.I. Gym</strong>
+                                <span class="time-badge">8 min</span>
+                                <p>Los estudiantes abren el chat con XOLO y aprenden sobre dilemas éticos y responsabilidad humana (sin prompt específico).</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot">3</div>
+                            <div class="timeline-content">
+                                <strong>Brain Spark</strong>
+                                <span class="time-badge">20 min</span>
+                                <p>Idear, construir y experimentar un programa con XOLO.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot">4</div>
+                            <div class="timeline-content">
+                                <strong>Gnius STORM - Compartir</strong>
+                                <span class="time-badge">5 min</span>
+                                <p>Demostración y reflexión en parejas.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot">5</div>
+                            <div class="timeline-content">
+                                <strong>Entrega de Evidencias</strong>
+                                <span class="time-badge">5 min</span>
+                                <p>Subir capturas a Gnius Space y finalizar misión.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="command-section">
+                    <h3>🚨 Resolución Rápida de Problemas</h3>
+                    <div class="troubleshooting-list">
+                        <ul>
+                            <li><strong>Si los alumnos no pueden ingresar a Gnius Space:</strong> Activa XOLO SOS en <a href="https://xolo.gnius.club" target="_blank">xolo.gnius.club</a> para continuar la misión sin interrumpir la clase.</li>
+                            <li><strong>Si el robot no responde:</strong> Verificar que la batería esté cargada y bien conectada. Revisar que el micro:bit esté correctamente insertado.</li><li><strong>Si la cámara/lente no reconoce:</strong> Revisar la iluminación del salón (evitar luz directa o muy tenue). Pedir a los alumnos acercar o alejar el objeto para mejorar la lectura.</li><li><strong>Si hay errores en el código:</strong> Recordar a los estudiantes que XOLO puede ayudar a depurar. Pídeles que copien el error y se lo muestren a XOLO.</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-
+            <!-- ACTIVIDAD 1: INTRO A LA MISIÓN -->
             <div class="activity-card" id="activity-1">
-                <h2>⚡ Actividad 1: Saludo de I.A. con todos ⏰ 3 minutos</h2>
-                <p>Generar conexión emocional, motivar y contextualizar.</p>
-                <div class="steps">
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 1: Saludo de I.A. con todos ⏰ 0.5 minutos</h3>
-                            <p>(Proyectar Diapositiva 2). Da la bienvenida a los alumnos con energía, introduce brevemente la emoción de la misión del día sin revelar detalles, e instrúyeles claramente cómo activar a Xolo con sus gustos/intereses.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">¡Hola, pensadores y programadores! 👋 Hoy vamos a poner a nuestro Cutebot en una situación un poco complicada. ¿Alguna vez han tenido que tomar una decisión difícil donde ninguna opción parecía perfecta? ¡Hoy vamos a ver cómo sería programar a un robot para eso! Antes de empezar, vamos a activar a nuestro amigo Xolo. Por favor, salúdenlo en el chat y díganle su nombre y cuáles son sus gustos e intereses. Por ejemplo: 'Hola Xolo, soy [Nombre] y mis gustos son [los animales y los rompecabezas]'."</p>
-                            </div>
-                        </div>
+                <div class="activity-header">
+                    <h2>🚀 Actividad 1: Intro a la Misión</h2>
+                    <div class="activity-timer">
+                        <span class="activity-duration">⏱️ 2:00</span>
+                        <button class="timer-start-btn" data-duration="120">Iniciar</button>
                     </div>
-                      <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 2: Saludo de I.A. con todos ⏰ 2.5 minutos</h3>
-                            <p>Monitorea a los alumnos mientras interactúan con Xolo. Asegúrate de que todos reciban una respuesta y resuelve cualquier problema técnico.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">¡Fantástico! Veo que Xolo ya les está respondiendo y está listo para esta misión de pensamiento profundo. Si alguien no ha recibido respuesta de Xolo, levante la mano para ayudarle.</p>
-                            </div>
-                        </div>
+                </div>
+                <div class="roles-section">
+                    <div class="role-card role-teacher">
+                        <h4>👨‍🏫 Rol del Maestro</h4>
+                        <ul>
+                            <li>Dar la bienvenida con energía.</li>
+                            <li>Pedir a los alumnos que ingresen a Gnius Space.</li>
+                            <li>Proyecta diapositiva 1 con el I Can Statement.</li>
+                            <li>Motiva: "¡Hoy le daremos valores y corazón a sus Cutebots!".</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-xolo">
+                        <h4>🤖 Rol de XOLO</h4>
+                        <ul>
+                            <li>XOLO ya está listo y conoce a cada estudiante.</li>
+                            <li>Sabe que hoy toca aprender sobre Dilemas éticos y responsabilidad humana en la programación de robots..</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-student">
+                        <h4>👦 Rol del Alumno</h4>
+                        <ul>
+                            <li>Escucha la misión del día.</li>
+                            <li>Loguearse en Gnius Space.</li>
+                            <li>Preparación para trabajar en parejas.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide-reference">
+                    <h4>📊 Diapositiva 1: I Can Statement</h4>
+                    <div class="slide-content">
+                        <p><strong>🎯 Hoy seré capaz de:</strong></p>
+                        <p class="highlight-text">🤖 A enseñar al Cutebot a tomar decisiones difíciles para que sea un rescatista responsable.</p>
+                        <p><strong>Aplicación real:</strong> Los ingenieros de autos autónomos en las ciudades usan esta tecnología para decidir cómo debe actuar el coche en situaciones de emergencia.</p>
+                        <p><strong>Tu aliado:</strong> XOLO ya sabe qué vas a aprender hoy. ¡Solo abre el chat y comienza!</p>
                     </div>
                 </div>
             </div>
-
+            <!-- ACTIVIDAD 2: A.I. GYM -->
             <div class="activity-card" id="activity-2">
-                <h2>⚡ Actividad 2: I Can Statement + Ejemplificación ⏰ 5 minutos</h2>
-                <p>Presentar claramente el objetivo de aprendizaje y establecer una meta concreta.</p>
-                <div class="steps">
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 1: I Can Statement + Ejemplificación ⏰ 2 minutos</h3>
-                            <p>(Proyectar Diapositiva 3). Introduce el concepto principal de la sesión con una analogía o ejemplo del mundo real, preparando el terreno para el objetivo de aprendizaje.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">Hemos visto cómo nuestro Cutebot puede ver objetos con su lente IA y seguir nuestras instrucciones. Pero, ¿qué pasa si las instrucciones lo llevan a una situación donde tiene que 'elegir' entre dos cosas no tan buenas? Piensen en esto: si solo tienen una galleta y dos amigos quieren, ¿cómo deciden? ¿Es fácil?</p>
-                            </div>
-                        </div>
+                <div class="activity-header">
+                    <h2>🧠 Actividad 2: A.I. Gym</h2>
+                    <div class="activity-timer">
+                        <span class="activity-duration">⏱️ 8:00</span>
+                        <button class="timer-start-btn" data-duration="480">Iniciar</button>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 2: Descripción General ⏰ 1 minuto</h3>
-                            <p>Muestra TU Cutebot con TU proyecto de ejemplo (el dilema) ya cargado y funcionando. Esta es una demostración en vivo, no se proyecta diapositiva.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">Para que vean una de las muchas cosas que podemos hacer hoy, les voy a mostrar un proyecto que yo mismo preparé. Miren mi Cutebot: (Muestra el Cutebot avanzando, encontrando el obstáculo y girando hacia uno de los animales). ¿Ven cómo podemos usar los conceptos de hoy para explorar una decisión difícil? Mi vibe fue simple: quería simular un escenario donde no hay una respuesta fácil y ver qué pasaba.</p>
-                            </div>
-                        </div>
+                </div>
+                <div class="roles-section">
+                    <div class="role-card role-teacher">
+                        <h4>👨‍🏫 Rol del Maestro</h4>
+                        <ul>
+                            <li>Proyecta diapositiva 2.</li>
+                            <li>Indica: "Abran el chat con XOLO y salúdenlo. Él ya sabe qué les va a enseñar hoy."</li>
+                            <li>Circula para asegurar que todos interactúan con XOLO.</li>
+                            <li>Si alguien tiene dudas, recuérdale: "Pregúntale a XOLO, él te puede explicar de otra forma".</li>
+                        </ul>
                     </div>
-                     <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 3: Desglose (Sensores) ⏰ 2 minutos</h3>
-                            <p>(Proyectar Diapositiva 4). Presenta formalmente el 'I Can Statement' y conecta el ejemplo mostrado con lo que los alumnos crearán.</p>
+                    <div class="role-card role-xolo">
+                        <h4>🤖 Rol de XOLO</h4>
+                        <p class="xolo-status">✅ XOLO ACTIVO</p>
+                        <ul>
+                            <li>Reconoce al estudiante y sus preferencias de aprendizaje.</li>
+                            <li>Explica cómo el Smart A.I. Lens ayuda al robot a ver y decidir.</li>
+                            <li>Introduce el concepto de dilemas éticos en la programación.</li>
+                            <li>Responde dudas sobre los conceptos.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-student">
+                        <h4>👦 Rol del Alumno</h4>
+                        <ul>
+                            <li>Abrir el chat con XOLO y saludarlo.</li>
+                            <li>Aprender a usar el Smart A.I. Lens para reconocer objetos.</li>
+                            <li>Aprender sobre responsabilidad humana y valores.</li>
+                            <li>Despejar todas sus dudas preguntando a XOLO.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide-reference">
+                    <h4>📊 Diapositiva 2: A.I. GYM</h4>
+                    <div class="slide-content">
+                        <p><strong>💬 Abre el chat con XOLO y salúdalo:</strong></p>
+                        <div class="prompt-box">
+                            <pre>"¡Hola XOLO! Estoy listo para aprender."</pre>
                         </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">Así como mi Cutebot tomó una decisión programada, ustedes explorarán esto hoy. Al final de la clase, podrán decir con confianza: <strong>'Yo puedo explicar por qué a veces es muy difícil programar a un robot para que tome la 'mejor' decisión, especialmente cuando no hay opciones perfectas.'</strong> ¡Vamos a ello!</p>
-                            </div>
-                        </div>
+                        <p class="highlight-text" style="margin-top: 1rem;">✨ XOLO ya sabe quién eres y qué tema toca hoy. ¡Solo empieza a conversar!</p>
+                        <p class="highlight-text">🎯 Objetivo: Aprender a usar el Smart A.I. Lens para tomar decisiones basadas en dilemas éticos.</p>
+                    </div>
+                </div>
+                
+                <div class="optional-script">
+                    <button class="collapsible-button">📖 Ver guion detallado (opcional)</button>
+                    <div class="collapsible-content">
+                        <p class="dialogue assistant">Ahora vamos a aprender algo fascinante sobre cómo piensan los robots. Abran su chat con XOLO y simplemente salúdenlo. XOLO ya los conoce y sabe exactamente qué les va a enseñar hoy. No necesitan escribir un prompt especial, solo empiecen a platicar con él. Hoy exploraremos cómo el Smart A.I. Lens le permite al Cutebot 'ver' el mundo, pero lo más importante es que aprenderemos que nosotros, como programadores, somos quienes le damos los valores para decidir qué hacer. ¡Pregúntenle todo lo que quieran sobre ética y robots!</p>
                     </div>
                 </div>
             </div>
-
+            <!-- ACTIVIDAD 3: BRAIN SPARK -->
             <div class="activity-card" id="activity-3">
-                <h2>⚡ Actividad 3: AI GYM ⏰ 5 minutos</h2>
-                <p>Introducir conceptos clave de IA o programación de forma amigable y visual.</p>
-                <div class="steps">
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 1: AI GYM ⏰ 1 minuto</h3>
-                            <p>(Proyectar Diapositiva 5). Presenta el A.I. GYM y da una instrucción clara a los alumnos sobre cómo pedir la información a Xolo.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">¡Genios, es momento de entrar al A.I. GYM! 🧠💪 Xolo nos va a explicar el concepto de 'dilema' en IA. Para que la explicación sea personalizada, escriban en el chat: 'Mi perfil es [escribe aquí tus gustos/intereses] y quiero que me enseñes sobre los dilemas éticos en la IA, usando el ejemplo de un robot de rescate'.</p>
-                            </div>
-                        </div>
+                <div class="activity-header">
+                    <h2>💡 Actividad 3: Brain Spark</h2>
+                    <div class="activity-timer">
+                        <span class="activity-duration">⏱️ 20:00</span>
+                        <button class="timer-start-btn" data-duration="1200">Iniciar</button>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 2: AI GYM ⏰ 4 minutos</h3>
-                            <p>(Proyectar Diapositivas 6 y 7). Monitorea a los alumnos mientras interactúan con Xolo y reciben la explicación. Fomenta que hagan preguntas de seguimiento.</p>
+                </div>
+                <div class="roles-section">
+                    <div class="role-card role-teacher">
+                        <h4>👨‍🏫 Rol del Maestro</h4>
+                        <ul>
+                            <li>Proyecta la diapositiva 3.</li>
+                            <li>Indica: "Pidan a XOLO que los ayude a idear un proyecto. Cuando tengan su GCS, pásenlo a bloques en MakeCode, prueben en el simulador y luego con el hardware real".</li>
+                            <li>Entrega por parejas los Cutebots y Smart A.I. Lens conforme los alumnos prueben su GCS en el simulador.</li>
+                            <li>Si hay errores, recuerda: "Pregúntenle a XOLO, él los ayuda a depurar".</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-xolo">
+                        <h4>🤖 Rol de XOLO</h4>
+                        <p class="xolo-status">✅ XOLO ACTIVO</p>
+                        <ul>
+                            <li>Ayuda a desarrollar una idea y un VIBE que aplique el reconocimiento de objetos y ética.</li>
+                            <li>Entrega el GCS de la idea del genio.</li>
+                            <li>Resuelve errores de sintaxis o lógica.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-student">
+                        <h4>👦 Rol del Alumno</h4>
+                        <ul>
+                            <li>Trabajar con XOLO una idea y un VIBE para usar el reconocimiento de objetos en una misión de rescate.</li>
+                            <li>Traducir el GCS de XOLO a bloques en MakeCode.</li>
+                            <li>Depurar su programa con XOLO si hay errores.</li>
+                            <li>Conectar el Smart A.I. Lens al Cutebot y probar.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide-reference">
+                    <h4>📊 Diapositiva 3: Brain Spark</h4>
+                    <div class="slide-content">
+                        <p><strong>1. 💬 Pide a XOLO que te ayude a crear:</strong></p>
+                        <div class="prompt-box">
+                            <pre>"Xolo, ayúdame a inventar una misión de rescate con valores. Diseñemos una historia donde el Cutebot sea un rescatista. Quiero que me ayudes a crear un VIBE y después convertirlo en un GCS conceptual que describa la regla ética que elegimos, aunque todavía no lo programemos completo (ej. “priorizar animales en peligro”)."</pre>
                         </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">(Mientras los alumnos interactúan con Xolo) ¡Excelente! Xolo les está explicando que un 'dilema' es una situación donde no hay una opción perfecta. Les contará cómo esto aplica a los robots y a los coches autónomos. Les recordará que podemos usar la A.I. Lens para que el robot 'vea' el escenario del dilema que vamos a crear.</p>
-                                <p class="dialogue assistant">Para que vean cómo se ve la lógica de la decisión en un GCS, Xolo podría mostrarles un ejemplo como este:</p>
-                                <pre class="dialogue assistant" style="color: #d32f2f;">
-POR SIEMPRE:
-    cutebot_avanzar(50)
-
-    SI (leer_distancia_ultrasonido_cm() < 10):
-        // Decisión Programada: Girar a la izquierda
-        cutebot_girar_izquierda(70) 
-        ESPERAR 1 segundo
-        cutebot_detener()
-        detener el programa
-    FIN SI 
-                                </pre>
-                                <p class="dialogue assistant">Si algo no queda claro, ¡recuerden que pueden preguntarle directamente a Xolo! Prueben con: <br>
-                                <strong>* 'Xolo, ¿un coche autónomo puede tener un dilema?'</strong><br>
-                                <strong>* '¿Por qué no hay una respuesta correcta?'</strong><br>
-                                <strong>* '¿Quién decide cómo se programa un coche autónomo?'</strong></p>
-                            </div>
-                        </div>
+                        <p style="margin-top: 1.5rem;"><strong>2. 🔬 Experimenta y descubre con tu programa:</strong></p>
+                        <ul>
+                            <li>¿Funciona como esperabas?</li>
+                            <li>¿Qué pasa si el Smart A.I. Lens no reconoce la tarjeta de inmediato?</li>
+                            <li>¿Funciona igual con mucha luz vs poca luz en el salón?</li>
+                            <li>¿Qué valores elegiste para que tu robot decidiera a quién rescatar primero?</li>
+                            <li>Si el robot toma una decisión equivocada, ¿de quién es la responsabilidad: del robot o tuya?</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="optional-script">
+                    <button class="collapsible-button">📖 Ver guion detallado (opcional)</button>
+                    <div class="collapsible-content">
+                        <p class="dialogue assistant">¡Es hora de crear, genios! Vamos a diseñar una misión de rescate donde su Cutebot sea el héroe. Imaginen que hay un incendio forestal y el robot debe elegir a qué animal salvar primero basándose en las tarjetas que 'vea' con su lente. Usen el flujo: ideen con XOLO, definan el VIBE de su rescatista, reciban su GCS y pásenlo a MakeCode. Por ejemplo, podrían programar que si detecta un animal en peligro, encienda luces rojas y avance, pero si es uno común, use luces amarillas. Prueben sus programas y vean si las preguntas de experimentación los ayudan a mejorar. Si tienen errores o dudas, pregúntenle a XOLO, él los ayudará a depurar.</p>
+                    </div>
+                </div>
+                <div class="challenge-prompt">
+                    <h4>🚀 Prompt de Desafío (para quienes terminen rápido)</h4>
+                    <div class="prompt-box">
+                        <p><strong>Si ya experimentaste con todo, pregunta a XOLO:</strong></p>
+                        <p class="challenge-text">"Ya probé con el rescate básico. ¿Puedes enseñarme cómo hacer que mi Cutebot emita un sonido diferente y use su pantalla LED para mostrar un mensaje de 'Misión Cumplida' según el animal rescatado?"</p>
                     </div>
                 </div>
             </div>
-
+            <!-- ACTIVIDAD 4: GNIUS STORM - COMPARTIR -->
             <div class="activity-card" id="activity-4">
-                 <h2>⚡ Actividad 4: Brain Spark ⏰ 20 minutos</h2>
-                <p>Poner en práctica el aprendizaje a través de una experiencia de codificación creativa guiada por la vibe del alumno.</p>
-                <div class="steps">
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 1: Brain Spark ⏰ 3 minutos</h3>
-                            <p>(Proyectar Diapositiva 8). Explica el escenario del dilema y guía una discusión grupal antes de programar. Mientras discuten, reparte el material.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">¡Tiempo, genios! Ahora vamos al Brain Spark. Hoy nuestro desafío es más de pensamiento que de código. Vamos a crear este escenario: (Describe la pista con el obstáculo y los dos animales). Ahora, la pregunta para todos: Nuestro Cutebot avanza y choca. Tiene que girar. A la izquierda está el [animal común], a la derecha el [animal raro]. Si tuvieran que programarlo, ¿qué harían? ¿Hacia dónde giraría? ¡Discutámoslo!</p>
-                            </div>
-                        </div>
+                <div class="activity-header">
+                    <h2>⚡ Actividad 4: Gnius STORM - Compartir y Reflexionar</h2>
+                    <div class="activity-timer">
+                        <span class="activity-duration">⏱️ 5:00</span>
+                        <button class="timer-start-btn" data-duration="300">Iniciar</button>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 2: Brain Spark ⏰ 3 minutos</h3>
-                            <p>(Proyectar Diapositiva 9). Guía a los alumnos para decidir una lógica (quizás por votación) y pedir el GCS a Xolo.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                 <p class="dialogue assistant">Ok, hemos discutido. Ahora, como grupo (o por parejas), decidamos una regla para programar. Por ejemplo, la regla podría ser: 'girar hacia el animal común'. Ahora, pídanle a Xolo el GCS para esa regla específica. Por ejemplo: 'Mi vibe es que el Cutebot avance, y si un obstáculo lo bloquea, gire a la izquierda para evitar al animal raro'. ¡Veamos qué plan nos da Xolo!</p>
-                                 <pre class="dialogue assistant" style="color: #d32f2f;">
-AL INICIO:
-    Initialize AI-Lens
-    // Switch function as Learn (si se usan objetos aprendidos)
-POR SIEMPRE:
-    cutebot_avanzar(50) 
-    SI (leer_distancia_ultrasonido_cm() < 10):
-        // Decisión: Girar hacia el ANIMAL_COMUN (izquierda)
-        cutebot_girar_izquierda(70) 
-        ESPERAR 1 segundo 
-        cutebot_detener()
-        mostrar texto "Giré Izquierda"
-        ESPERAR 5 segundos
-        detener el programa
-    FIN SI
-                                 </pre>
-                            </div>
-                        </div>
+                </div>
+                <div class="roles-section">
+                    <div class="role-card role-teacher">
+                        <h4>👨‍🏫 Rol del Maestro</h4>
+                        <ul>
+                            <li>Organiza las parejas para compartir.</li>
+                            <li>Gestiona los tiempos: 2 min demo + 2 min reflexión + 1 min cierre.</li>
+                            <li>Facilita retroalimentación constructiva.</li>
+                            <li>Cierra con reflexión sobre aplicaciones reales.</li>
+                        </ul>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 3: Brain Spark ⏰ 13 minutos</h3>
-                            <p>Da tiempo a los alumnos para implementar el GCS en MakeCode y probar el escenario físico. Recordarles alternar el uso del hardware.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">¡Manos a la obra, programadores y filósofos! Tomen el GCS que les dio Xolo y constrúyanlo en MakeCode. Preparen su escenario con el obstáculo y los dos animales. Descarguen el código y observen la decisión que toma su Cutebot. Recuerden que están trabajando en parejas, así que asegúrense de tomar turnos. Si algo no funciona, depuren juntos.</p>
-                            </div>
-                        </div>
+                    <div class="role-card role-xolo">
+                        <h4>🤖 Rol de XOLO</h4>
+                        <p class="xolo-status">⏸️ XOLO EN ESPERA</p>
+                        <ul>
+                            <li>Disponible solo si hay dudas finales urgentes.</li>
+                        </ul>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 4: Brain Spark ⏰ 1 minutos</h3>
-                            <p>Ofrece desafíos adicionales para los alumnos que terminen antes.</p>
+                    <div class="role-card role-student">
+                        <h4>👦 Rol del Alumno</h4>
+                        <ul>
+                            <li>Demuestra su programa funcionando a otra pareja.</li>
+                            <li>Explica qué tarjetas reconoce bien el Smart A.I. Lens.</li>
+                            <li>Comparte un descubrimiento interesante.</li>
+                            <li>Da retroalimentación positiva al compañero.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide-reference">
+                    <h4>📊 Diapositiva 4: Think-Pair-Share</h4>
+                    <div class="slide-content tps-structure">
+                        <div class="tps-phase">
+                            <h4>🤔 THINK (30 seg)</h4>
+                            <p>Reflexión individual: ¿Qué tarjetas reconoció mejor tu Smart A.I. Lens? ¿Qué te sorprendió de la decisión ética que programaste?</p>
                         </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">¿Su robot ya tomó su difícil decisión? ¡Excelente! Para un desafío extra: Prueben programar la otra opción. ¿Qué pasa si eligen girar hacia el otro animal? ¿Cómo cambia el GCS? ¡Consulten con Xolo!</p>
-                            </div>
+                        <div class="tps-phase">
+                            <h4>👥 PAIR (2 min)</h4>
+                            <p>Con otra pareja: Demuestren su programa y expliquen su experiencia</p>
+                            <p class="highlight-text">Frase guía: "Mi Cutebot reconoció las tarjetas de animales y tomó decisiones éticas. Me sorprendió que la luz afectara cómo el lente ve los objetos."</p>
+                        </div>
+                        <div class="tps-phase">
+                            <h4>💬 SHARE (2 min)</h4>
+                            <p>Retroalimentación mutua y cierre del maestro.</p>
                         </div>
                     </div>
                 </div>
             </div>
-
+            <!-- ACTIVIDAD 5: ENTREGA DE EVIDENCIAS -->
             <div class="activity-card" id="activity-5">
-                <h2>⚡ Actividad 5: Gnius STORM ⏰ 7 minutos</h2>
-                <p>Compartir, reflexionar y consolidar el aprendizaje sobre dilemas éticos.</p>
-                <div class="steps">
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 1: Gnius STORM (Think - Individual) ⏰ 0.5 minutos</h3>
-                            <p>(Proyectar Diapositiva 10). Presenta la actividad como el momento de compartir y celebrar los proyectos, explicando brevemente la dinámica.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">¡Tiempo, creadores! Han hecho un trabajo increíble explorando una idea muy compleja. Ahora en nuestro Gnius STORM, vamos a compartir los resultados y, lo más importante, nuestras reflexiones. ¿Listos?</p>
-                            </div>
-                        </div>
+                <div class="activity-header">
+                    <h2>✅ Actividad 5: Entrega de Evidencias</h2>
+                    <div class="activity-timer">
+                        <span class="activity-duration">⏱️ 5:00</span>
+                        <button class="timer-start-btn" data-duration="300">Iniciar</button>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 2: Gnius STORM (Pair - Parejas) ⏰ 0.5 minutos</h3>
-                            <p>(Proyectar Diapositiva 11). Da a los alumnos un momento corto para la reflexión individual.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">Perfecto. Antes de compartir, piensen 30 segundos: <strong>Vieron lo que hizo su robot. ¿Cómo se sienten con esa decisión programada? ¿Fue una decisión 'fácil' de tomar?</strong></p>
-                            </div>
-                        </div>
+                </div>
+                <div class="roles-section">
+                    <div class="role-card role-teacher">
+                        <h4>👨‍🏫 Rol del Maestro</h4>
+                        <ul>
+                            <li>Proyecta diapositiva 5 con las instrucciones.</li>
+                            <li>Guía a los estudiantes para tomar las capturas.</li>
+                            <li>Asegura que todos suban sus evidencias a Gnius Space.</li>
+                            <li>Felicita al grupo por completar la misión.</li>
+                        </ul>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 3: Gnius STORM (Share - Retroalimentación) ⏰ 2 minutos</h3>
-                            <p>(Proyectar Diapositiva 12). Indica a los alumnos que discutan en parejas.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">¡Muy bien! Ahora, con su compañero, discutan las preguntas de la diapositiva: ¿Qué pasaría si hubieran programado la otra opción? ¿Sería 'mejor' o 'peor'? ¿Por qué? ¿Creen que el robot 'entiende' la diferencia entre los animales?</p>
-                            </div>
-                        </div>
+                    <div class="role-card role-xolo">
+                        <h4>🤖 Rol de XOLO</h4>
+                        <p class="xolo-status">⭕ XOLO FINALIZADO</p>
+                        <ul>
+                            <li>La interacción con XOLO ha terminado para esta misión.</li>
+                        </ul>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 4: Gnius STORM (Reflexión Final) ⏰ 3 minutos</h3>
-                            <p>(Proyectar Diapositiva 13). Guía una discusión grupal con las preguntas clave de la escaleta.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">Ahora, como grupo, reflexionemos. (Guía la discusión con las preguntas de la escaleta): '¿Cómo se sienten con la decisión que tomó el robot?', 'Si fuera un coche real, ¿quién debería decidir cómo se programa?', '¿Creen que la IA 'entiende' que un animal está en peligro de extinción?'</p>
-                            </div>
-                        </div>
+                    <div class="role-card role-student">
+                        <h4>👦 Rol del Alumno</h4>
+                        <ul>
+                            <li>Tomar screenshot de su código en MakeCode.</li>
+                            <li>Tomar screenshot de su conversación con XOLO.</li>
+                            <li>Subir ambas evidencias a Gnius Space.</li>
+                            <li>Dar click en "Finalizar Misión".</li>
+                        </ul>
                     </div>
-                     <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 5: Gnius STORM (Reflexión Final) ⏰ 1 minuto</h3>
-                            <p>(Proyectar Diapositiva 14). Cierra la sesión conectando la experiencia con el concepto de ética en IA.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">¡Increíble trabajo, pensadores! Hoy todos lograron decir: <strong>'Yo puedo explicar por qué a veces es muy difícil programar a un robot para que tome la 'mejor' decisión, especialmente cuando no hay opciones perfectas.'</strong> Han explorado la 'ética en la IA'. Programar robots para nuestro mundo implica pensar en decisiones difíciles. No siempre hay respuestas fáciles, y es importante que muchas personas pensemos juntas en cómo queremos que actúen. ¡Han dado un gran paso para ser creadores de tecnología responsables!</p>
-                            </div>
-                        </div>
+                </div>
+                <div class="slide-reference">
+                    <h4>📊 Diapositiva 5: ¡Misión Cumplida!</h4>
+                    <div class="slide-content">
+                        <p><strong>📸 Para terminar, sube tus evidencias a Gnius Space:</strong></p>
+                        <ol>
+                            <li>Una captura de pantalla de tu programa final en <strong>MakeCode</strong>.</li>
+                            <li>Una captura de pantalla de tu conversación con <strong>XOLO</strong> donde te dio tu GCS.</li>
+                        </ol>
+                        <p class="highlight-text" style="margin-top: 1rem;">¡No olvides dar click en el botón <strong>"Finalizar Misión"</strong> cuando termines!</p>
                     </div>
                 </div>
             </div>
         </main>
     </div>
-
     <script src="script.js"></script>
 </body>
-</html>
+</html></html>
